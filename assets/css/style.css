@@ -1,0 +1,129 @@
+/* Professional Portfolio */
+body {
+    margin: 0;
+    padding:0;
+}
+.banner {
+    background: url(../photos/backgroundMe.jpg) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    color: white;
+    position: relative;
+}
+header {
+    padding: 5px 30px 0px;
+    background-color: rgb(255,255,255,0.5);
+}
+.hat {
+    float: left;
+    display: inline-block;
+}
+.title-color {
+    color: #ff4181;
+}
+.search_my {
+    float: right;
+    border: 3px black solid;
+}
+.search1 {
+    border: none;
+    background-color: none;
+    width: 150px;
+    background-color: transparent;
+}
+.button {
+    color: white;
+    background-color:black;
+    border: none;
+    height: 40px;
+    width: 40px;
+}
+.nav1 {
+    background-color: #f8f9fa;
+}
+.navbar {
+    padding: 0px;
+}
+.navbar-nav li {
+    z-index: 1;
+}
+.navbar-nav li a{
+    font-size: 17px;
+    padding: 15px 60px!important;
+}
+.navbar-nav li a:hover {
+    border-right: 3px solid #ff4f81;
+    border-left: 3px solid #ff4f81;
+    transition: 0.5s all;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+}
+/* .slider {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.flex-caption {
+    padding: 2%;
+    left: 0;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+} */
+.more-btn {
+    font-size: 14px;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: #ff4f81;
+    padding: 10px 22px;
+    border: 2px solid white;
+}
+.more-btn:hover {
+    color: black;
+    background: white;
+
+}
+/* .model-body img {
+    width: 100%;
+} */
+.portfolio {
+    margin-top: 80px;
+}
+.portfolio h1 {
+    letter-spacing: 12px;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+.portfolio h3 {
+    color: #ff4f81;
+}
+@media(max-width: 1200px) {
+    .navbar-nav li {
+        font-size: 15px;
+    }
+}
+@media(max-width: 992px) {
+    .navbar-toggler {
+        margin: 10px 0px 10px 30px;
+        background-color: #ff4f81;
+    }
+    .navbar-toggler:hover, .navbar-toggler:focus {
+        background-color: white;
+        border-color: #ff4f81;
+    }
+    .navbar-light {
+        background-color: white; 
+    }
+    .navbar-nav li a {
+        text-align: center;
+        background-color: aliceblue;
+    }
+    .navbar-nav li a:hover {
+        background-color: #ff4f81;
+    }
+}
