@@ -65,6 +65,23 @@ header {
     color: black;
 }
 /* Navigation Ends */
+h2 {
+    color: white;
+    font-size: 3em;
+    letter-spacing: 15px;
+    text-align: left;
+    width: 100%;
+    padding: 30px;
+}
+#aboutme {
+    background-color: black;
+    color: white;
+    position: relative;
+}
+.maintext {
+    line-height: 2em;
+    padding: 30px;
+}
 .more-btn {
     font-size: 14px;
     color: white;
@@ -72,7 +89,7 @@ header {
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 2px;
-    background: #ff4f81;
+    background: black;
     padding: 10px 22px;
     border: 2px solid white;
 }
@@ -86,21 +103,25 @@ header {
 .card {
     height: 28em;
     border: none;
-    margin: 2em;
+    margin: 4em;
+    background-color: rgb(255,255,255,0.5);
 }
 .card-img-top {
     height: 15em;
     width: 18em;
 }
-#card1 {
-    background-color: blue;
+.backdrop {
+    background-image: url(../photos/skyline.jpg);
+    background-size: cover;
+    padding: 2em;
 }
 .portfolio-grid {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
-    padding: 5px;
+    padding: 30px;
     transition: 0.5s all;
+    
 }
 .portfolio-grid:hover {
     box-shadow: 2px 15px 70px 2px rbg(0,0,0, 0.75);
