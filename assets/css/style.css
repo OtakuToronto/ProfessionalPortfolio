@@ -3,6 +3,13 @@ body {
     margin: 0;
     padding:0;
 }
+.section {
+    color: black;
+    font-size: 3em;
+    letter-spacing: 15px;
+    text-align: left;
+    width: 100%;
+}
 .banner {
     background: url(../photos/backgroundMe.jpg) no-repeat center;
     background-size: cover;
@@ -14,16 +21,14 @@ header {
     padding: 5px 30px 0px;
     background-color: rgb(255,255,255,0.5);
 }
-.hat {
+.title {
     float: left;
-    display: inline-block;
-}
-.title-color {
-    color: #ff4181;
+    display: inline;
 }
 .search_my {
     float: right;
-    border: 3px black solid;
+    margin-top: 15px;
+    border: 2px black solid;
 }
 .search1 {
     border: none;
@@ -59,19 +64,7 @@ header {
 .navbar-light .navbar-nav .nav-link {
     color: black;
 }
-/* .slider {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.flex-caption {
-    padding: 2%;
-    left: 0;
-    color: white;
-    font-size: 20px;
-    text-align: center;
-} */
+/* Navigation Ends */
 .more-btn {
     font-size: 14px;
     color: white;
@@ -86,59 +79,40 @@ header {
 .more-btn:hover {
     color: black;
     background: white;
-
 }
 .portfolio {
     margin-top: 80px;
 }
-.portfolio h1 {
-    letter-spacing: 12px;
-    margin-bottom: 15px;
-    font-size: 15px;
+.card {
+    height: 28em;
+    border: none;
+    margin: 2em;
 }
-.portfolio h3 {
-    color: #ff4f81;
+.card-img-top {
+    height: 15em;
+    width: 18em;
 }
-.portfolio p {
-    padding: 10px 137px 0px;
+#card1 {
+    background-color: blue;
 }
-.crl1 {
-    background-color: #ff4f81;
-}
-.crl2 {
-    background-color: #00ff00;
-}
-.crl3 {
-    background-color: yellow;
-}
-.portfolio_grid {
+.portfolio-grid {
+    display: flex;
+    flex-wrap: wrap;
     text-align: center;
-    padding: 30px;
+    padding: 5px;
     transition: 0.5s all;
 }
-.portfolio_grid h4 {
-    color: #ff4f81;
-}
-.portfolio_grid p {
-    padding:0px;
-    color: black;
-    margin-bottom: 25px;
-}
-.portfolio_grid:hover {
+.portfolio-grid:hover {
     box-shadow: 2px 15px 70px 2px rbg(0,0,0, 0.75);
 }
+/* Portfolio Ends */
 .inform {
     background: url(../photos/contact.jpg) 0px 0px;
     height: 100vh;
     background-size: cover;
-    padding-top: 30px;
+    padding-top: 5px;
     padding-bottom: 30px;
     color: black;
-}
-.inform h1 {
-    color: black;
-    letter-spacing: 10px;
-    text-align: left;
 }
 .inform_form {
     width: 100%;
@@ -155,7 +129,7 @@ header {
     background: none;
     outline: none;
     font-size: 1em;
-    margin-top: 22rem;
+    margin-top: 24rem;
     margin-left: 1em;
     margin-bottom: 1em;
     border: none;
@@ -170,7 +144,7 @@ header {
     outline: none;
     font-size: 1em;
     padding: 0.6em, 1em;
-    min-height: 10em;
+    min-height: 9em;
     border: none;
     border-bottom: solid 2px black;
     transition: all 0.5s ease-in-out;
@@ -184,7 +158,6 @@ header {
     border: 1px solid black;
     background: #ff4f81;
     transition: 0.5s all;
-    
 }
 .inform input[type="submit"]:hover {
     background: none;
@@ -194,6 +167,7 @@ header {
 .inform input[type="text"]:hover, .inform input[type="text"]:focus, .inform input[type="email"]:hover, .inform input[type="email"]:focus, .inform textarea:hover, .inform textarea:focus {
     border-color: #ff4f81;
 }
+/* Contact ends */
 #back-to-top {
     position: fixed;
     bottom: 40px;
@@ -213,6 +187,7 @@ header {
 #back-to-top.show {
     opacity: 1;
 }
+/* Footer Endes */
 @media(max-width: 1200px) {
     .navbar-nav li {
         font-size: 15px;
