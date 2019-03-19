@@ -8,10 +8,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <!-- <link rel="stylesheet" href="./assets/css/flexslider.css"> -->
 </head>
 <body>
-    <div class="banner">
+    <div class="banner" id="about">
         <header>
             <div class="hat">
                 <h1><i class="fas fa-graduation-cap"></i><span class="title-color">Holland Gronau</span></h1>
@@ -35,62 +34,23 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav m-auto">
                     <li class="nav-item">
-                      <a class="nav-link" href="#">About Me</a>
+                      <a class="nav-link" href="#about">About Me</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Portfolio</a>
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul> 
             </div>
         </nav>
     </div>
-<!-- Flexslider Plug-in -->
-        <!-- <div class="container slider">
-            <div class="flexslider">
-                <ul class="slides">
-                    <li class="flex-caption">
-                        <p>This is my example caption 1</p>
-                        <button type="button" class="more-btn" data-toggle="modal" data-target="#exampleModal">
-                                Launch demo modal
-                        </button>
-                    </li>
-                    <li class="flex-caption">
-                        <p>This is my example caption 2</p>
-                        <button type="button" class="more-btn" data-toggle="modal" data-target="#exampleModal">
-                                Launch demo modal
-                        </button>
-                    </li>
-                    <li class="flex-caption">
-                        <p>This is my example caption 3</p>
-                        <button type="button" class="more-btn" data-toggle="modal" data-target="#exampleModal">
-                                Launch demo modal
-                        </button>
-                    </li>
-                </ul>
-            </div> -->
-<!-- Models -->
-    <!-- <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">My modal</h5>
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-                <div class="modal-body">
-                    <img class="modal-image" src="./assets/photos/skyline.jpg" height="80px", width="80px">
-                </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
+
     </div>
 
     <div class="container">
-        <div class="portfolio">
+        <div class="portfolio" id="portfolio">
             <h1>Portfolio</h1>            
             <h3>Here are some examples of my work</h3>
             <p<>This is where I will enter text about what I want to do</p>
@@ -104,7 +64,7 @@
             </div>
 
             <div class="row">
-                    <div class="col-md-4 crl1 about_grid">
+                    <div class="col-md-4 crl2 about_grid">
                         <h4>Project title</h4>
                         <p>This is where I can enter information about my project</p>
                         <button type="button" class="more-btn" data-toggle="modal" data-target="#exampleModal"></button>
@@ -112,7 +72,7 @@
                 </div>
 
                 <div class="row">
-                        <div class="col-md-4 crl1 about_grid">
+                        <div class="col-md-4 crl3 about_grid">
                             <h4>Project title</h4>
                             <p>This is where I can enter information about my project</p>
                             <button type="button" class="more-btn" data-toggle="modal" data-target="#exampleModal"></button>
@@ -120,7 +80,7 @@
                     </div>
 
                     <div class="row">
-                            <div class="col-md-4 crl1 about_grid">
+                            <div class="col-md-4 crl4 about_grid">
                                 <h4>Project title</h4>
                                 <p>This is where I can enter information about my project</p>
                                 <button type="button" class="more-btn" data-toggle="modal" data-target="#exampleModal"></button>
@@ -128,7 +88,7 @@
                         </div>
 
                         <div class="row">
-                                <div class="col-md-4 crl1 about_grid">
+                                <div class="col-md-4 crl5 about_grid">
                                     <h4>Project title</h4>
                                     <p>This is where I can enter information about my project</p>
                                     <button type="button" class="more-btn" data-toggle="modal" data-target="#exampleModal"></button>
@@ -136,26 +96,79 @@
                             </div>
         </div>
     </div>
+ </div>
 
+ <div class="inform" id="contact">
+    <div class="container">
+        <h1>Contact</h1>
+        <div class="inform_form">
+            <form action="#" method="post">
+                <div class="row">
+                    
+                    <div class="col-sm-4 col-md-4 form-left">
+                        <input type="text" name="name" placeholder="First and Last Name" required="">
+                    </div>
+                    
+                    <div class="col-sm-4 col-md-4 form-left">
+                        <input type="email" name="email" placeholder="Email" required="">
+                    </div>
+                    
+                </div>
+                <!-- <div class="clearfix">     -->
+                </div>
+                <textarea name="message" placeholder="Type your message" required=""></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
     </div>
+ </div>
+ <footer>
+     <div class="container">
+         <div class="row">
+             <div class="col-md-4 three-col">
+                    
+                 <div class="col-md-4 mid-row">
+                     <h4>Facebook</h4>
+                     <a href="#"><i class="fab fa-facebook-f"></i></a>
+                     <!-- <a href="#"><i class="fas fa-facebook-f"></i></a>
+                     <a href="#"><i class="fas fa-facebook-f"></i></a> -->
+                 </div>
+                 <p>Copyright</p>
+                 
+         </div>
+     </div>
+ </footer>
+ <a href="#" id="back-to-top" title="Back to top"></a>
+ 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+    $(window).load(function(){
+        if ($('#back-to-top').length) {
+            var scrollTrigger = 100,
+            backToTop = function () {
+                var scrollTop = $(window).scrollTop();
+                if (scrollTop > scrollTrigger) {
+                    $('back-to-top').addClass('show');
+                } else {
+                    $('#back-to-top').removeClass('show');
+                }
+            };
+            backToTop();
+            $(window).on('scroll', function () {
+                backToTop();
+            });
+            $('#back-to-top').on('click', function(e) {
+                e.preventDefault();
+                $('html,body').animate({
+                    scrollTop: 0
+                }, 700);
+            });
+    }
+    });
+    </script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="./assets/js/jquery.flexslider.js"></script>
-    <script>
-        // Slider
-    // $(function(){
-    //     SyntaxHighlighter.all();
-    // });
-    // $(window).load(function(){
-    //     $('.flexslider').flexslider({
-    //         animation: "slide",
-    //         start: function(slider){
-    //             $('body').removeClass('loading');
-    //         }
-    //     });
-    // });
-    </script>
+    
 </body>
 </html>
