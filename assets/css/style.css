@@ -80,9 +80,10 @@ h2 {
 }
 .maintext {
     line-height: 2em;
-    padding: 30px;
+    padding: 5.5em;
+    margin-bottom: 0px;
 }
-.more-btn {
+#btnGroupDrop1 {
     font-size: 14px;
     color: white;
     font-weight: 600;
@@ -92,10 +93,21 @@ h2 {
     background: black;
     padding: 10px 22px;
     border: 2px solid white;
+    transition: 0.5s all;
 }
-.more-btn:hover {
-    color: black;
-    background: white;
+.dropdown-menu {
+    background: black;
+    padding: 10px 22px;
+    border: 2px solid white;
+    transition: 0.5s all;
+}
+.dropdown-item{
+    font-size: 14px;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 .portfolio {
     margin-top: 80px;
@@ -121,7 +133,6 @@ h2 {
     text-align: center;
     padding: 30px;
     transition: 0.5s all;
-    
 }
 .portfolio-grid:hover {
     box-shadow: 2px 15px 70px 2px rbg(0,0,0, 0.75);
@@ -171,19 +182,21 @@ h2 {
     transition: all 0.5s ease-in-out;
 }
 .inform input[type="submit"] {
-    outline: none;
-    color: black;
-    padding: 0.7em 1em;
     font-size: 14px;
-    margin: 1em 0 0 0;
-    border: 1px solid black;
-    background: #ff4f81;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: black;
+    padding: 10px 22px;
+    border: 2px solid white;
     transition: 0.5s all;
 }
 .inform input[type="submit"]:hover {
-    background: none;
     color: black;
-    border: 1px solid black;
+    background: white;
+    border: 2px solid black;
 }
 .inform input[type="text"]:hover, .inform input[type="text"]:focus, .inform input[type="email"]:hover, .inform input[type="email"]:focus, .inform textarea:hover, .inform textarea:focus {
     border-color: #ff4f81;
@@ -198,15 +211,45 @@ h2 {
     height: 40px;
     text-align: center;
     background: url(../photos/back.png) no-repeat 0px 0px;
-    color: #444;
+    background-color: rgb(255,255,255,0.5);
     cursor: pointer;
     border: none;
     text-decoration: none;
     background-size: 40px;
-    opacity: 0;
 }
-#back-to-top.show {
-    opacity: 1;
+.icons {
+    width: 100%;
+    background-color: black;
+}
+.cv {
+    font-size: 2em;
+    color: white;
+    margin-left: 5em;
+    margin-right: 5em;
+}
+.in {
+    font-size: 2em;
+    color: white;
+    margin-right: 5em;
+}
+.git {
+    font-size: 2em;
+    color: white;
+    margin-right: 5em;
+}
+.cv:hover, .in:hover, .git:hover {
+    color: #ff4f81;
+}
+footer {
+    text-align: center;
+    line-height: 2em;
+    background-color: black;
+    position: sticky;
+    font-size: 1em;
+    margin-bottom: 0px;
+}
+.copyright {
+    margin-bottom: 0px;
 }
 /* Footer Endes */
 @media(max-width: 1200px) {
